@@ -4,22 +4,17 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-
   width: 100%;
   padding: 0;
   margin: 0;
-
   font-family: "Georgia Regular", Arial, sans-serif;
   overflow-x: hidden;
   color: $main-text;
   background: black;
   background-image: url("../../img/background-mobile.jpg");
-
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 50vw 10vw black;
-
-  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     background-image: none;
@@ -32,7 +27,6 @@
   margin: -10vh -10vw;
   height: 120vh;
   width: 120vw;
-
   position: fixed;
   background-size: cover;
   background-position: center;
@@ -64,12 +58,8 @@
   &--map {
     background-image: url("../../img/map.jpg");
     box-shadow: inset 0 0 50vw 10vw black;
-
     z-index: -1;
   }
-
-
-
 }
 
 .page__main-controls {
@@ -81,21 +71,15 @@
   margin: 0;
   position: fixed;
   overflow: hidden;
-
   height: 100vh;
   width: 100vw;
   min-width: 320px;
   padding: 0;
 
-  // display: grid;
-  //grid-template-columns: 13vw auto 25vw;
-  //grid-template-rows: 6vh auto 18vh;
-
   &--catalog,
   &--gallery {
     display: block;
     overflow: unset;
-
     position: unset;
     height: 100%;
     overflow-y: scroll;
@@ -115,13 +99,7 @@
   justify-content: center;
   margin-top: 2vh;
 
-
   @media (min-width: $tablet-width) {
-
-    //margin-top: 0;
-
-    //  flex-direction: row;
-    //  gap: 6vw;
     &--main {
       position: unset;
     }
@@ -131,7 +109,6 @@
     flex-direction: row;
     position: fixed;
     z-index: 9;
-    // display: block;
   }
 
   &--main {
@@ -152,10 +129,6 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
-
-  @media (min-width: $desktop-width) {
-    // display: none;
-  }
 }
 
 .page__footer-logo {
@@ -169,15 +142,9 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
-
-  @media (min-width: $desktop-width) {}
-
 }
 
 .page__footer-controls {
-  //display: none;
-
-  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -187,7 +154,6 @@
 .page__footer {
   z-index: 100;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -195,40 +161,25 @@
 
   @media (min-width: $tablet-width) {
     height: 170px;
-    //margin-bottom: 0;
     flex-direction: row;
     justify-content: space-between;
-
-    // width: 300px;
   }
 
-  // position: fixed;
-  // right: 1.6vw;
-  //bottom: 3vh;
   &--main {
     flex-direction: row;
     justify-content: space-evenly;
   }
-
-
-
-  @media (min-width: $desktop-width) {}
 }
-
-.page__footer-controls {}
-
 
 .page__title {
   font-size: 24px;
   text-align: center;
   margin: 10px 0;
-
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
   }
-
 }
 
 .page__card-image {

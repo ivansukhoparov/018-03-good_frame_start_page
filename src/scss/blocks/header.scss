@@ -1,14 +1,12 @@
 .header {
-
   z-index: 9;
-
 }
 
 .header__logo-image {
   height: 6vh;
 }
 
-.header__background{
+.header__background {
   filter: blur(3vh);
   display: block;
   background-color: rgba(0, 0, 0, 0.7);

@@ -1,22 +1,15 @@
 .logo {
-
-
   flex-direction: column-reverse;
   justify-content: flex-start;
+
   @media (min-width: $tablet-width) {
- display: flex;
+    display: flex;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
-
 }
 
 .logo__description {
   font-size: 16px;
   display: block;
-
   text-transform: uppercase;
 }
 
@@ -32,5 +25,5 @@
 
 .logo__image {
   width: 131px;
-height: 91px;
+  height: 91px;
 }
