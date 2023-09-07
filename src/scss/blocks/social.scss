@@ -9,8 +9,20 @@
 .social__link {
   margin: 0 0 0 1vh;
   display: block;
-  background-color: $main-elements;
-  border-radius: 5%;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    border: #ffffff solid 0.5vh;
+    box-shadow: 0 0 0.7vh #ffd300, inset 0 0 0.7vh #ffd300;
+    border-radius: 20%;
+    transform: rotate(0deg);
+    transition: transform 1s,
+  }
+
   height: 6vh;
   width: 6vh;
 
@@ -18,7 +30,9 @@
   background-repeat: no-repeat;
   background-size: 50%;
 
-  transition: box-shadow 500ms, background-color 500ms, border-radius 500ms;
+  transition: box-shadow 500ms,
+  background-color 500ms,
+  border-radius 500ms;
 
   &--vk {
     background-image: url("../../img/vk-icon.svg");
@@ -33,11 +47,14 @@
   }
 
   &:hover {
-    height: 5vh;
-    width: 5vh;
-    border: #ffffff solid 0.5vh;
-    box-shadow: 0 0 1vh $main-text, inset 0 0 1vh $main-text;
-    background-color: $transparent;
-    border-radius: 15%;
+    &::after {
+
+      transform: rotate(135deg);
+      height: 5vh;
+      width: 5vh;
+      border: #ffffff solid 0.5vh;
+      box-shadow: 0 0 1vh $main-text, inset 0 0 1vh $main-text;
+      background-color: $transparent;
+    }
   }
 }

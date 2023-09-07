@@ -1,0 +1,50 @@
+@keyframes round360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round180 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(135deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes dots {
+    0% {
+        content: " "
+    }
+
+    25% {
+        content: " .";
+    }
+
+    50% {
+        content: " ..";
+    }
+
+    75% {
+        content: " ...";
+    }
+
+    100% {
+        content: " ...";
+    }
+
+}

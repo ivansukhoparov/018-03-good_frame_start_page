@@ -78,16 +78,6 @@
 
 .page__content {
 
-  /* 
-    for some mobile pages:
-      position: relative;
-      height: 100%;
-    */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   margin: 0;
   position: fixed;
   overflow: hidden;
@@ -128,7 +118,7 @@
 
   @media (min-width: $tablet-width) {
 
-    margin-top: 0;
+    //margin-top: 0;
 
     //  flex-direction: row;
     //  gap: 6vw;
@@ -205,7 +195,7 @@
 
   @media (min-width: $tablet-width) {
     height: 170px;
-    margin-bottom: 0;
+    //margin-bottom: 0;
     flex-direction: row;
     justify-content: space-between;
 
